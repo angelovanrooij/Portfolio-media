@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head class="knop2">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"> </script>
+    <link rel="stylesheet" href="css/knop-2.css" type="text/css">
+</head>
+
+<body>
+    <p class="vraagintro">Vraag 2</p>
+    <br>
+    <hr>
+    <div class="vraag2a">
+        <p>Zet de slider op</p>
+        
+        <br>
+        <p id="randomslidervalue"> 65</p>
+        <br>
+        <br>
+        <button id="volgende3" onclick="NextQuestion()">Naar Einde</button>
+        <button id="opnieuw3" onclick="ToStart()">Probeer opnieuw</button>
+    </div>
+    <div id="timer3"></div>
+    <div class="slidervraag">
+
+        <input type="range" min="0" max="100" step="1" value="0" id="slider1" onchange="SliderVraag();">
+        <br>
+
+        <output id="slidervalue">0</output>
+    </div>
+
+
+</body>
+
+<script>
+    var volgende = document.getElementById('volgende3');
+    var opnieuw = document.getElementById('opnieuw3');
+
+
+    function SliderVraag() {
+
+        //var max = 0;
+        //var min = 100;
+        //var RandomValue = Math.floor(Math.random() * (max - min)) + min;
+
+        var randomgetal = document.getElementById('randomslidervalue')
+
+        var Slidervalue = document.getElementById('slider1').value;
+        document.getElementById('slidervalue').innerHTML = Slidervalue;
+
+        if (Slidervalue == 65) { //RandomValue) {
+            document.getElementById('slider1').disabled = true;
+            volgende.style.display = "block";
+            clearInterval(Timer);
+
+        }
+    }
+
+    function NextQuestion() {
+        window.location.href = "knop-2-einde.html";
+    }
+
+    function ToStart() {
+        window.location.href = "knop-2.html";
+    }
+
+    var TijdResterend = 10;
+    var Timer = setInterval(function () {
+        document.getElementById('timer3').innerHTML = TijdResterend;
+        TijdResterend -= 1;
+
+        if (TijdResterend <= -1) {
+            opnieuw.style.display = "block";
+            clearInterval(Timer);
+            document.getElementById('slider1').disabled = true;
+        }
+    }, 1000);
+</script>

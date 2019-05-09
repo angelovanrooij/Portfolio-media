@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head class="knop2">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"> </script>
+    <link rel="stylesheet" href="css/knop-2.css" type="text/css">
+</head>
+
+<body>
+    <p class="vraag1a">Vraag 1</p>
+    <button type="button" id="btnkliks">Keren Geklikt: 0</button>
+    <br>
+    <hr>
+    <div id="vraag2"></div>
+    <button id="volgende2" onclick="NextQuestion()">Volgende vraag</button>
+    <button id="opnieuw2" onclick="ToStart()">Probeer opnieuw</button>
+    <div id="timer2"></div>
+
+
+
+
+
+</body>
+
+<script>
+    var volgende = document.getElementById('volgende2');
+    var opnieuw2 = document.getElementById('opnieuw2');
+    var max = 60;
+    var min = 40;
+    var randomamount = Math.floor(Math.random() * (max - min)) + min;
+    document.getElementById('vraag2').innerHTML = 'Druk: ' + randomamount + ' keer';
+
+
+
+
+    var counter = document.getElementById('btnkliks')
+    var count = 0;
+    counter.onclick = function () {
+        count++;
+        counter.innerHTML = "Keren Geklikt: " + count;
+        if (count == randomamount) {
+            volgende.style.display = "block";
+            clearInterval(Timer);
+            counter.disabled=true;
+        }
+    }
+
+    function NextQuestion() {
+        window.location.href = "knop-2-2.html";
+    }
+
+    var TijdResterend = 10;
+    var Timer = setInterval(function () {
+        document.getElementById('timer2').innerHTML = TijdResterend;
+        TijdResterend -= 1;
+
+        if (TijdResterend <= -1) {
+            opnieuw2.style.display = "block";
+            clearInterval(Timer);
+        }
+    }, 1000);
+
+    function ToStart() {
+        window.location.href = "knop-2.html";
+    }
+</script>
