@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/home.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+            </div>
+            <div id="titel">
+                Portfolio
+            </div>
+            <ul class="listitems" id="navigatiebar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="over.html">Over</a></li>
+                <li><a href="#">SCO</a></li>
+                <li><a href="#">UEX</a></li>
+                <li><a href="#">PTM</a></li>
+                <li><a href="#">DEV</a></li>
+                <li><a href="#" class="hamburger" onclick="functie()"> <i class="fa fa-bars"></i> </a> </li>
+            </ul>
+        </div>
+        <div class="caption">
+            <p>Angelo van Rooij</p>
+            <p id="welkom">Welkom</p>
+        </div>
+    </div>
+    <div class="secties">
+
+        <div class="sectie1">
+            <div class="circle1"></div>
+            <p>Software</p>
+        </div>
+
+        <div class="sectie2">
+            <div class="circle2"></div>
+            <div class="descriptie1">
+                Media <br>
+            </div>
+        </div>
+
+        <div class="sectie3">
+            <div class="circle3"></div>
+            Projecten
+        </div>
+    </div>
+    <div class="body">
+        <div class="bodyimage"></div>
+    </div>
+
+    <div class="footer">
+        Klik op 1 van de drie cirkels om door te lezen <br>
+        of druk op 1 van de links in de navigatiebar<br>
+    </div>
+
+    <script>
+        /* als je op de hamburger klikt verandert classname van listitems --> listitems responsive*/
+        function functie() {
+            var x = document.getElementById("navigatiebar");
+
+            if (x.className === "listitems") {
+                x.className += " responsive";
+            } else {
+                x.className = "listitems";
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

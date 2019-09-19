@@ -11,9 +11,9 @@ body {
     color: rgb(255, 221, 238);
 }
 .Box{
-    margin-left: 20px; 
-    margin-top:10px;
-    margin-right: 20px;
+    margin-left: 100px; 
+    margin-top: 10px;
+    margin-right: 100px;
     padding: 20px 70px 20px 70px;
     position: relative;
     background-color: #201823;   
@@ -24,6 +24,15 @@ body {
     margin-right: auto;
 }
 .header{
+    margin-bottom: 20px;
+}
+
+.pheader{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hr{
     margin-bottom: 20px;
 }
 .paragraaf{
@@ -49,14 +58,57 @@ h4 {
 }
 
 .NavigatieBar {
-    background-color: #282828;
-    position: fixed;
+    background-color: #2C2F33;
+    position: relative;
     width:100%;
     color: rgb(255, 221, 238);
     list-style: none;
     text-align: center;
     padding: 20px 0 20px 0;
     margin-bottom: 25px;
+    z-index: 1;
+}
+
+.dropdown-hover{
+    color: white;
+    background-color: #2C2F33;
+    border:none;
+}
+
+.dropdown-hover:hover{
+    color: #c1c1c1;
+    cursor: pointer;
+}
+
+.dropdownmenu{
+    background-color: #2C2F33;
+    display: none;
+    position: absolute;
+    padding-top: 15px;
+    padding-right: 50px;
+}
+
+.dropdownmenu > li{
+    padding: 3px;
+    list-style-type: none;
+    
+}
+.dropdownmenu > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.dropdownmenu > li :hover{
+    color: #c1c1c1;
+}
+
+.dropdownmenu > a:hover{
+    color: #c1c1c1;
+}
+
+
+.dropdown-hover:hover .dropdownmenu{
+    display: block;
 }
 
 .NavigatieBar>li {
@@ -71,13 +123,12 @@ h4 {
     color: #ffffff;
 }
 
-.NavigatieBar>li>a:hover {
+.NavigatieBar>li>:hover{
     color: #c1c1c1;
 }
 
 .week1L {
     float: left;
-    /* hiermee staat een deel links en een deel rechts (in de zelfde  regel) wel 2 classes nodig in html*/
 }
 
 .week1R {
@@ -276,7 +327,6 @@ a:hover {
 }
 
 .box {
-    position: absolute;
     background-color: rgb(35, 192, 240);
     height: 50px;
     padding-bottom: 2px;
@@ -403,4 +453,38 @@ audio{
     position: absolute;
     top: 150px;
     left: 1200px;
+}
+
+.imagebox{
+    width: 650px;
+    height: 250px;
+    margin: 25px;
+}
+
+
+
+.startweekfoto1{
+background-image: url("afbeeldingen/startweek_foto.png");
+background-size: 400px;
+width: 250px;
+height: 250px;
+display: inline-block;
+}
+
+.startweekfoto2{
+    background-image: url("afbeeldingen/startweek_foto_after.png");
+    background-size: 400px;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    float: right;
+}
+
+.piramide{
+    background-image: url("afbeeldingen/piramide.jpg");
+    background-size: 200px;
+    width: 200px;
+    height: 260px;
+    margin-bottom: 20px;
+
 }
