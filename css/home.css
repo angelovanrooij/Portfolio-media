@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: 'proxima-nova', sans-serif;
 }
 
 .header {
-    background-image: url("banner2.jpg");
+    background-image: url("afbeeldingen/banner2.jpg");
     width: 100%;
     height: 450px;
 }
@@ -19,40 +20,6 @@
     height: 75px;
     position: absolute;
     text-align: right;
-}
-
-.listitems a.hamburger{
-    display: none;
-}
-
-/* met deze verander je wanneer de hamburger komt, de links verdwijnen en er komt een hamburger in de plaats*/
-@media screen and (max-width: 900px) {
-    .listitems > li > a {
-        display: none;
-    }
-
-    .listitems a.hamburger {
-        position: absolute;
-        float: left;
-        display: block;
-    }
- 
-}
-
-/* dit is voor als de class "responsive heet, dus als je erop hebt geklikt en het scherm kleiner is...*/
-@media screen and (max-width: 900px) {
-
-    .listitems a.hamburger {
-        float: left;
-        position: absolute;
-        display: block;
-    }
-
-    .listitems.responsive > li a {
-        float: right;
-        display: block; /* zodat ze onder elkaar komen*/
-      
-    }
 }
 
 .caption {
@@ -130,9 +97,10 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background: url("code.png") no-repeat center #282828;
+    background: url("afbeeldingen/code.png") no-repeat center #282828;
     background-size: 60px 60px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .sectie2 {
@@ -148,7 +116,7 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background: url("about.png") no-repeat center #282828;
+    background: url("afbeeldingen/about.jpg") no-repeat center #282828;
     background-size: 60px 60px;
     margin-bottom: 30px;
 }
@@ -188,7 +156,7 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background: url("berg.png") no-repeat center #282828;
+    background: url("afbeeldingen/berg.png") no-repeat center #282828;
     background-size: 60px 60px;
     margin-bottom: 30px;
 }
@@ -196,17 +164,42 @@
 .body {
     background-color: #f7f7f7;
     width: 100%;
-    height: 345px;
-    padding-bottom: 100px;
+    height: 450px;
+    margin-bottom: 50px;
 }
 
 .bodyimage {
-    background-image: url("VisualStudioCode.png");
+    background-image: url("afbeeldingen/VisualStudioCode.png");
     height: 345px;
     width: 650px;
     transform: translateY(15%);
+    cursor: pointer;
 }
 
+.bodyimage:hover {
+opacity: 0.7;
+transition: 0.5s;
+}
+
+
 .footer{
-    padding-left: 10px ;
+    background-color: #1F2324;
+    height: 275px;
+}
+#naam{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+
+#footertext{
+    color: #b3aca5;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#buttonfooter{
+    align-items: center; 
 }
