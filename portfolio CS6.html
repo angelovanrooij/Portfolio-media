@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/home.css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
     <title>Home</title>
 </head>
 
@@ -13,20 +12,20 @@
             <div class="logo">
             </div>
             <div id="titel">
-                Portfolio
+                Angelo van Rooij
             </div>
             <ul class="listitems" id="navigatiebar">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="over.html">Over</a></li>
-                <li><a href="#">SCO</a></li>
-                <li><a href="#">UEX</a></li>
-                <li><a href="#">DEV</a></li>
-                <li><a href="#">PTM</a></li>
-                <li><a href="#">PRO</a></li>
+                <li><a href="portfolio CS6.html">Home</a></li>
+                <li><a href="#">Over</a></li>
+                <li><a href="sco.html">Sco</a></li>
+                <li><a href="#">Uex</a></li>
+                <li><a href="#">Dev</a></li>
+                <li><a href="#">Ptm</a></li>
+                <li><a href="#">Leeruitkomsten</a></li>
             </ul>
         </div>
         <div class="caption">
-            <p>Angelo van Rooij</p>
+            <p>Portfolio</p>
         </div>
     </div>
     <div class="secties">
@@ -49,51 +48,46 @@
         </div>
     </div>
     <div class="body">
-        <div class="bodyimage"></div>
+        <div id="bodyimage1"></div>
+        <h1 id="subjectsco"><a href="sco.html">Strategy & Concepting</a></h1>
+        <h4 class="ex1"> Target Audience</h4>
+        <h4 class="ex2">Customer Journey</h4>
+        <h4 class="ex3">Visual Associations</h4>
+        <h4 class="ex4">Photography</h4>
+        <hr class="line">
+    </div>
+
+    <div class="body">
+        <div id="bodyimage2"></div>
+        <h1 id="subjectuex" onclick="">User Experience</h1>
+        <h4 id="ex1"> Interview</h4>
+        <h4 id="ex2">Card Sorting</h4>
+        <h4 id="ex3">Storyboard</h4>
+        <h4 id="ex4">... Prototype</h4>
+        <h4 id="learningoutcomesuex"> Leeruitkomsten</h4>
+        <hr id="line">
+    </div>
+
+    <div class="body">
+        <div id="bodyimage3"></div>
+        <h1 id="subjectdev" onclick="">Development</h1>
+        <h4 class="ex1"> GitLab</h4>
+        <h4 class="ex2">Mania</h4>
+        <h4 class="ex3">Portfolio</h4>
+        <h4 class="ex4">Tekenopdracht</h4>
+        <hr class="line">
     </div>
 
     <div class="footer">
 
         <p id="naam">Angelo van Rooij</p>
-        <p id="footertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam eum voluptatibus dicta illo impedit magni veritatis maxime asperiores, fugit, ex debitis! Culpa repellat fuga, quasi officiis accusamus ratione maiores voluptate.</p>
-        <button id="buttonfooter">Contact</button>
+        <p id="footertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam eum voluptatibus dicta illo
+            impedit magni veritatis maxime asperiores, fugit, ex debitis! Culpa repellat fuga, quasi officiis accusamus
+            ratione maiores voluptate.</p>
     </div>
 
 
 
     <script>
-        /* als je op de hamburger klikt verandert classname van listitems --> listitems responsive*/
-        function functie() {
-            var x = document.getElementById("navigatiebar");
-
-            if (x.className === "listitems") {
-                x.className += " responsive";
-            } else {
-                x.className = "listitems";
-            }
-        }
-
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
