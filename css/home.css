@@ -361,18 +361,18 @@ transition: 0.5s;
 
 .container{
     background-color: #f7f7f7;
-    height: 700px;
+    height: 1500px;
     margin: 10px 100px 10px 75px;
     width: 90%;
     position: absolute;
     top: 250px;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
-#targetaudience{
+.exercise{
     margin-left: 10px;
     margin-bottom: 10px;
-    margin-top: 10%;
+    margin-top: 5%;
     max-width: 45%;
     
 }
@@ -381,9 +381,8 @@ transition: 0.5s;
     margin-left: 10px;
     max-width: 45%;
     margin-right: 0px;
-    float: left;
     line-height: 20px;
-    display: block;
+    margin-bottom: 10px;
 }
 
 #userpersona{
@@ -392,6 +391,34 @@ transition: 0.5s;
     width: 500px;
     display: block;
     float: right;
+    margin-right: 100px;
+    background-size: 100%;
+}
+
+.hr{
+    border: 1px solid black;
+    width: 85%;
+    position: relative;
+    left: 7%;
+    margin-top: 100px;
+}
+
+#competitorpdf{
+    color: grey;
+    text-decoration-line: underline;
+    
+}
+
+#competitorpdf:hover{
+    cursor: pointer;
+}
+
+.competitorpng{
+    background-image: url("afbeeldingen/competitors.png");
+    height: 340px;
+    width: 500px;
+    float: right;
+    display: block;
     margin-right: 100px;
     background-size: 100%;
 }
