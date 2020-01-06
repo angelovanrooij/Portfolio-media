@@ -362,12 +362,12 @@
 
 .container {
     background-color: #f7f7f7;
-    height: 2000px;
+    height: 3250px;
     margin: 10px 100px 10px 75px;
     width: 90%;
     position: absolute;
     top: 250px;
-    border-radius: 5%;
+    border-radius: 4%;
 }
 
 .exercise {
@@ -375,7 +375,6 @@
     margin-bottom: 10px;
     margin-top: 5%;
     max-width: 45%;
-
 }
 
 .paragraaf {
