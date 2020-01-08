@@ -403,12 +403,6 @@
     margin-top: 100px;
 }
 
-#competitorpdf {
-    color: grey;
-    text-decoration-line: underline;
-
-}
-
 #competitorpdf:hover {
     cursor: pointer;
 }
@@ -476,7 +470,7 @@ margin-left: 20px;
     position: relative;
     margin-left: 50px;
     top: 375px;
-
+    outline: none;
 }
 
 .button:hover {
@@ -490,4 +484,63 @@ margin-left: 20px;
     max-width: 45%;
 
 }
+
+.flexcontainer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: silver;
+    width: 500px;
+    height: 500px;
+}
+
+.flexchild{
+    width: 500px;
+    height: 250px;
+    background-color: none;
+    margin-right: 5px;
+}
+
+.competitorbtn{
+    position: relative;
+    top: 350px;
+    left: 125px;
+
+    background-color: #e7e7e7;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+    top: 375px;
+    outline: none;
+    text-decoration-line: none;
+
+}
+
+#competitorbtn:hover {
+    cursor: pointer;
+}
+
+.visualassociationspng{
+    background-image: url("afbeeldingen/visualassociations.png");
+    height: 340px;
+    width: 500px;
+    float: right;
+    display: block;
+    margin-right: 100px;
+    background-size: 100%;
+}
+
+.posterpng{
+    background-image: url("afbeeldingen/poster1.png");
+    height: 340px;
+    width: 500px;
+    float: right;
+    display: block;
+    margin-right: 100px;
+    background-size: 100%;
+
+}
+
+
 
