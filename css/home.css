@@ -542,5 +542,16 @@ margin-left: 20px;
 
 }
 
+.worldpressphoto{
+    background-image: url("afbeeldingen/worldpressphoto.png");
+    height: 340px;
+    width: 500px;
+    float: right;
+    display: block;
+    margin-right: 100px;
+    background-size: 100%;
+
+}
+
 
 
