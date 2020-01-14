@@ -429,12 +429,12 @@
     margin-right: 30px;
 }
 
-.leeruitkomstopdract{
-width: 750px;
-height: 400px;
-position: relative;
-float: right;
-margin-left: 20px;
+.leeruitkomstopdract {
+    width: 750px;
+    height: 400px;
+    position: relative;
+    float: right;
+    margin-left: 20px;
 }
 
 .doelgroeppng {
@@ -444,7 +444,7 @@ margin-left: 20px;
     max-width: 100%;
     float: left;
     background-size: 75%;
-    
+
     background-repeat: no-repeat;
 
 }
@@ -456,7 +456,7 @@ margin-left: 20px;
     max-width: 100%;
     float: right;
     background-size: 75%;
-    
+
     background-repeat: no-repeat;
 
 }
@@ -477,7 +477,7 @@ margin-left: 20px;
     cursor: pointer;
 }
 
-.reflectie{
+.reflectie {
     margin-left: 10px;
     margin-bottom: 10px;
     margin-top: 15%;
@@ -485,22 +485,16 @@ margin-left: 20px;
 
 }
 
-.flexcontainer{
-    display: flex;
-    justify-content: flex-end;
-    background-color: silver;
-    width: 500px;
-    height: 500px;
-}
 
-.flexchild{
+
+.flexchild {
     width: 500px;
     height: 250px;
     background-color: none;
     margin-right: 5px;
 }
 
-.competitorbtn{
+.competitorbtn {
     position: relative;
     top: 350px;
     left: 125px;
@@ -521,7 +515,7 @@ margin-left: 20px;
     cursor: pointer;
 }
 
-.visualassociationspng{
+.visualassociationspng {
     background-image: url("afbeeldingen/visualassociations.png");
     height: 340px;
     width: 500px;
@@ -531,7 +525,7 @@ margin-left: 20px;
     background-size: 100%;
 }
 
-.posterpng{
+.posterpng {
     background-image: url("afbeeldingen/poster1.png");
     height: 340px;
     width: 500px;
@@ -542,7 +536,7 @@ margin-left: 20px;
 
 }
 
-.worldpressphoto{
+.worldpressphoto {
     background-image: url("afbeeldingen/worldpressphoto.png");
     height: 340px;
     width: 500px;
@@ -553,5 +547,24 @@ margin-left: 20px;
 
 }
 
+#survey {
 
+    background-image: url("afbeeldingen/enqueteresultaten.jpg");
+    height: 340px;
+    width: 500px;
+    display: block;
+    float: right;
+    margin-right: 50px;
+    background-size: 100%;
+}
 
+#taskanalysis {
+
+    background-image: url("afbeeldingen/Taskanalysis.png");
+    height: 340px;
+    width: 500px;
+    display: block;
+    float: right;
+    margin-right: 50px;
+    background-size: 100%;
+}
