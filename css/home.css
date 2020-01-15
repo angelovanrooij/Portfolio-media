@@ -97,7 +97,6 @@
     background: url("afbeeldingen/code.png") no-repeat center #616060;
     background-size: 60px 60px;
     margin-bottom: 30px;
-    cursor: pointer;
 }
 
 .sectie2 {
@@ -177,15 +176,10 @@
     color: inherit;
 }
 
-#subjectsco:hover {
-    cursor: pointer;
-}
-
 #subjectuex {
     position: absolute;
     top: 10%;
     left: 22%;
-    text-decoration-line: underline;
 }
 
 #ex1 {
@@ -233,12 +227,6 @@
     position: absolute;
     top: 10%;
     left: 65%;
-    text-decoration-line: underline;
-}
-
-
-#subjectdev:hover {
-    cursor: pointer;
 }
 
 .ex1 {
@@ -323,7 +311,7 @@
 
 .footer {
     background-color: #1F2324;
-    height: 250px;
+    height: 200px;
 }
 
 #naam {
@@ -339,7 +327,6 @@
     text-align: center;
     padding-bottom: 15px;
     line-height: 30px;
-    text-decoration-line: underline;
 }
 
 /* -------------------------------------------Vakken-----------------------------------------------------------------*/
@@ -561,6 +548,16 @@
 #taskanalysis {
 
     background-image: url("afbeeldingen/Taskanalysis.png");
+    height: 340px;
+    width: 500px;
+    display: block;
+    float: right;
+    margin-right: 50px;
+    background-size: 100%;
+}
+
+#interview{
+    background-image: url("afbeeldingen/interview.png");
     height: 340px;
     width: 500px;
     display: block;
