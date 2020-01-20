@@ -5,6 +5,8 @@ var button = document.getElementById("")
 var enquete = "opdrachten/Google Enquete.pdf"
 var taskanalysis = "opdrachten/Task analysis.pdf"
 var interview = "opdrachten/Interview.pdf"
+var escaperoom = "opdrachten/Escaperoom.pdf"
+var videoprototype = "opdrachten/Video Prototype.pdf"
 
 function OpenPdf(buttonid) {
     if (buttonid == "1")
@@ -22,5 +24,11 @@ function OpenPdf(buttonid) {
     }
     else if (buttonid == "6") {
         window.open(interview, "_blank");
+    }
+    else if (buttonid == "7") {
+        window.open(escaperoom, "_blank");
+    }
+    else if (buttonid == "8") {
+        window.open(videoprototype, "_blank");
     }
 }
